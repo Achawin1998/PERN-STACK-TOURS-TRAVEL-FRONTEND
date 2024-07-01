@@ -1,0 +1,14 @@
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* จัดให้เนื้อหาอยู่ตรงกลาง */
+}
+
+.testimonial img {
+    border-radius: 25%; /* ทำให้รูปเป็นวงกลม */
+}
+
+.testimonial h5 {
+    font-style: italic;
+    font-weight: 700;
+}

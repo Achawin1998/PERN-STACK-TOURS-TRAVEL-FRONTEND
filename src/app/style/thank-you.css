@@ -1,0 +1,32 @@
+ .thankyou {
+    margin: 2rem auto;
+}
+
+.thank__you span i {
+    font-size: 5rem;
+    color: green;
+}
+
+.thank__you h1 {
+    font-size: 4rem;
+    font-family: var(--subtitle-font-name);
+}
+
+.thank__you h3 {
+    font-size: 1.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn_thankyou {
+    background: var(--secondary-color);
+    font-weight: 550;
+    padding: 1rem 1.3rem;
+    border-radius: 14px;
+    transition: all 0.4s ease;
+}
+
+.btn_thankyou:hover {
+    background: #f0a418;
+    transform: translateY(-3px);
+    scale: 110%;
+}

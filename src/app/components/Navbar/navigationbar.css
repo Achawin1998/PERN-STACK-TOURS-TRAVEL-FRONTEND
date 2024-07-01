@@ -1,0 +1,176 @@
+ .header {
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+ }
+
+.container_flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo   {
+    width: 25%;
+    border-radius: 4px;
+    margin-top: 0;
+}
+
+.nav__item a {
+    color: var(--heading-color);
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+
+.nav__item {
+    color: var(--secondary-color) !important;
+    transition: all 0.4s ease;
+}
+ 
+
+/* สืบทอดจากสี parent ข้างบน */
+.active__link , .nav__item a:hover {
+    color: inherit;  
+    transform: translateY(-3px);
+}
+
+
+.active__link  {
+   color: var(--secondary-color);
+   font-weight: 500;
+   font-size: 1.1rem;
+   transition: all 0.4s ease;
+}
+
+.mobile__menu {
+    font-size: 1.3rem;
+    color: var(--heading-color);
+}
+
+.sticky__header {
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    background: #fff;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    box-shadow: 3px 3px 8px -3px #ddd;
+}
+
+.btn {
+    width: 100px;
+}
+
+.btn_register {
+    background: rgb(22, 168, 252);
+}
+
+.btn_login {
+    background: limegreen;
+}
+
+.btn_logout {
+    background: rgb(255, 2, 2);
+}
+
+.mobile__menu {
+    display: none;
+}
+  
+/* Back to top  */
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    color: #444; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    font-size: 55px; /* Set a font size */
+    padding-bottom: 65px;
+    height: 45px;
+    width: 50px;
+}
+  
+  #myBtn:hover {
+    color: #000; /* Add a dark-grey background on hover */
+  }
+/*  */
+@media only screen and (max-width: 992px) {
+    .logo  {
+        width: 45%;
+    }
+
+    .navigation {
+        width: 100%; 
+        height: 100%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.307);
+        z-index: 999;
+        display: none;
+    }
+
+    .menu {
+        position: absolute;
+        top: 0;
+        right: 0;
+        text-align: center;
+        width: calc(100% - 50%);
+        height: 100%;
+        background: rgb(71, 69, 69);
+        flex-direction: column;
+        line-height: 0.5rem;
+        justify-content: center;
+        z-index: 9999;
+    }
+
+    .mobile__menu {
+        display: block;
+    }
+
+    .show__menu {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .logo  {
+        width: 45%;
+    }
+}
+
+
+@media only screen and (max-width: 576px) {
+    .menu {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding-left: 0;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        background: rgb(128, 128, 128);
+        flex-direction: column;
+        line-height: 0.5rem;
+        justify-content: center;
+        z-index: 9999;
+    }
+
+    .logo-img  {
+        display: none;
+    }
+
+    .btn__etc {
+        margin: 2rem auto;
+    }
+ 
+}
+
+ 

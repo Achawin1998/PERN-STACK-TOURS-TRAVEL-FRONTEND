@@ -1,0 +1,228 @@
+* {
+    font-family: 'Roboto' , sans-serif;
+}
+
+.about-us {
+    padding: 80px 0px;
+}
+
+.about_container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* กำหนด flex grow 0 flex shrink 0 flex-basis 50% หรือ ขนาดเริ่มต้นของ element */
+.about_flex {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 30px;
+ }
+
+ 
+.about-us h2 {
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.about-us h3 {
+    font-size: 22px;
+    color: #888;
+    margin-bottom: 8px;
+}
+
+.about-us p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-us img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 2rem auto;
+    border-radius: 4px;
+}
+
+.social-links {
+    margin-bottom: 20px;
+}
+
+.social-links a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 10px;
+    color: #fff;
+    background: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: all 0.4s ease;
+}
+/* ทำ hover animation */
+.social-links a:hover {  
+    transform: translateY(-3px);
+}
+
+.btn_about {
+    color: #fff;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    background: #333;
+    transition: all 0.4s ease;
+}
+
+.btn_about:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px);
+}
+
+/* Preloader start */
+
+.js-preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.99);
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    opacity: 1;
+    visibility: visible;
+    z-index: 9999;
+    -webkit-transition: opacity 0.25s ease;
+    transition: opacity 0.25s ease;
+  }
+
+  .js-preloader.loaded {
+    opacity: 0;
+    visibility: hidden; 
+    pointer-events: none;
+  }
+
+  .preloader-inner {
+    position: relative;
+    width: 142px;
+    height: 40px;
+    background: transparent;
+  }
+
+  .preloader-inner .dot {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 12px;
+    left: 15px;
+    background: #f35525;
+    border-radius: 50%;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    -webkit-animation: dot 2.8s infinite;
+    animation: dot 2.8s infinite;
+  }
+
+  .preloader-inner .dots {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    margin-top: 12px;
+    margin-left: 31px;
+    -webkit-animation: dots 2.8s infinite;
+    animation: dots 2.8s infinite;
+  }
+  
+  .preloader-inner .dots span {
+    display: block;
+    float: left;
+    width: 16px;
+    height: 16px;
+    margin-left: 16px;
+    background: #f35525;
+    border-radius: 50%;
+  }
+
+
+  @-webkit-keyframes dot {
+    50% {
+        -webkit-transform: translateX(96px);
+        transform: translateX(96px);
+    }
+  }
+  
+  @keyframes dot {
+    50% {
+        -webkit-transform: translateX(96px);
+        transform: translateX(96px);
+    }
+  }
+  
+  @-webkit-keyframes dots {
+    50% {
+        -webkit-transform: translateX(-31px);
+        transform: translateX(-31px);
+    }
+  }
+  
+  @keyframes dots {
+    50% {
+        -webkit-transform: translateX(-31px);
+        transform: translateX(-31px);
+    }
+  }
+  
+/* Preloader end */
+
+@media only screen and (max-width: 900px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .about_flex {
+        max-width: 100%;
+    }
+
+    .about-us h2 {
+        font-size: 31px;
+    }
+
+    .about-us p {
+        font-size: 16px;
+    }
+
+    .social-links a {
+        width: 30px; 
+        height: 30px;
+        line-height: 30px;
+        font-size: 14px;
+        margin-right: 5px;
+    }
+
+    .btn_about {
+        font-size: 16px;
+        padding: 8px 16px;
+        margin-bottom: 30px;
+    }
+
+    .about-us img {
+        width: 90%;
+        margin-bottom: 0;
+    }
+}

@@ -1,0 +1,110 @@
+.newsletters {
+    background-image: url('https://cdn.pixabay.com/photo/2017/01/20/00/30/maldives-1993704_1280.jpg');  
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    height: 350px;
+    margin-top: 3rem;
+    padding: 3.5rem;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+}
+
+.newslatter-title {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 270px;
+    color: #f7f7f7;
+}
+
+.newslatter-title h3 , h4 {
+    font-size: 1.9rem;
+    font-weight: 400;
+    color: #f7f7f7;
+  
+}
+
+.newslatter-title h4 {
+    margin-top: 0.2rem;
+}
+
+.newslatter-title p {
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+.newslatter-title input {
+    margin: 1.2rem 0.8rem;
+    padding: 0.5rem;
+    color: #444;
+    width: 350px;
+    border: none;
+    border-radius: 5px;
+}
+
+.newslatter-title input:hover {
+    background: rgb(243, 243, 243);
+ 
+}
+
+.newslatter-title button {
+    padding: 0.5rem;
+    width: 150px;
+    background: #00b7ff;
+    border: none;
+    border-radius: 5px;
+    margin-left: 0.3rem;
+    cursor: pointer;
+} 
+
+.newslatter-title button:hover {
+    background: #0086bb;
+}
+ 
+
+@media only screen and (max-width: 992px) {
+    .newsletters {
+        display: flex;
+        height: auto;
+    }
+
+    .newslatter-title h3 , h4 {
+        font-size: 1.5rem;
+    }
+ 
+    .newslatter-title p {
+      font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .newsletters {
+        display: flex;
+        height: auto;
+    }
+
+    .newslatter-title h3 , h4 {
+        font-size: 1.1rem;
+    }
+ 
+    .newslatter-title p {
+      display: none;
+    }
+
+    .newslatter-title input {
+       width: 300px;
+    }
+    
+    .newslatter-title button {
+        font-size: 0.9rem;
+        width: auto;
+    } 
+}
+
+@media only screen and (max-width: 496px) {
+    .newslatter-title h3 , h4  {
+        font-size: 0.9rem;
+     }
+}
