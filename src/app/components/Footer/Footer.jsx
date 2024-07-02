@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import "./footer.css";
-import { Container, Row, Col, ListGroup, ListGroupItem } from "reactstrap";
+import { Row, Col, ListGroup, ListGroupItem } from "reactstrap";
 import Link from "next/link";
 
 function Footer() {
@@ -81,7 +81,7 @@ function Footer() {
           <Col lg="3">
             <h5 className="footer__link-title">Contact</h5>
 
-            <div className="footer-links ">
+            <div className="footer-links">
               <ListGroup className="footer__quick-links">
                 <ListGroupItem className="ps-0 border-0 d-flex align-items-center gap-3">
                   <h6 className="mb-0 d-flex align-items-center gap-1">
@@ -91,7 +91,7 @@ function Footer() {
                     email:
                   </h6>
 
-                  <p className="mb-1">Achawin1998s_@hotmail.com</p>
+                  <p>Achawin1998s_@hotmail.com</p>
                 </ListGroupItem>
               </ListGroup>
 
@@ -104,7 +104,7 @@ function Footer() {
                     Phone:
                   </h6>
 
-                  <p className="mb-0">+66922541189</p>
+                  <p>+66922541189</p>
                 </ListGroupItem>
               </ListGroup>
             </div>

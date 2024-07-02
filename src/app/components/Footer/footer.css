@@ -1,4 +1,8 @@
  
+footer {
+    padding: 1rem ;
+}
+
 .footer-container {
     width: 100%; 
     margin: auto auto;
@@ -7,10 +11,6 @@
     max-width: 1200px;  
   }
   
-footer {
-    padding: 3rem ;
-}
-
 .footer__link-title {
     text-align: center;
     font-weight: 500;
@@ -32,7 +32,6 @@ footer {
  .social__links span a i {
     font-size: 1.6rem;
     color: rgb(80, 80, 214);
-    
  }
  
  .social__links span:hover {
@@ -54,14 +53,6 @@ footer {
     font-size: 1.1rem;
     padding-left: 4rem;
 }
-
-/* 
-    transform: translateY(-3px);
-
-
-    transition: all 0.4s ease;
-
-*/
 
 .footer-group {
     margin-top: 0.5rem;
@@ -91,7 +82,6 @@ footer {
 }
 
 @media only screen and (max-width: 991px) {
-    
     .footer__link-title {
         margin-top: 1rem;
     }
@@ -121,3 +111,29 @@ footer {
     }
   }
 
+  @media only screen and (max-width: 576px) {
+    .footer__link-title {
+        font-size: 1.1rem;
+    }
+
+    .social__links span a i {
+        font-size: 1rem;
+     }
+
+     .footer-group li a {
+        font-size: 0.85rem;
+     }
+
+     .footer__quick-links h6 span i {
+        font-size: 1rem;
+    }
+
+    .footer__quick-links p {
+        font-size: 0.9rem;
+    }
+
+    .copyright {
+        font-size: 0.9rem;
+    }
+ 
+  }

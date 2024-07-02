@@ -50,8 +50,6 @@
     background-clip: padding-box;  
 }   
 
-
-
 .welcome__text a:hover {
    border: 1px solid indianred;
    background: linear-gradient(135deg, indianred, #4299E1);
@@ -79,6 +77,70 @@
     }
   }
  
+  @media only screen and  (max-width: 992px) {
+    .welcome__text h1 {
+      font-size: 4.2em;
+  }
 
+  .welcome__text a {
+   font-size: 1.1rem;
+}  
+
+}
+
+@media only screen and  (max-width: 767px) {
+  .welcome__text h1 {
+    font-size: 3.5em;
+}
+
+.welcome__text a {
+ font-size: 1rem;
+ padding: 1.8rem 20px;
+}  
+
+}
+
+@media only screen and  (max-width: 576px) {
+  .welcome__text span {
+    font-size: 1.8rem;
+}
+
+  .welcome__text h1 {
+    font-size: 3em;
+}
+
+  .welcome__text a {
+  font-size: 0.9rem;
+  }  
+
+}
  
+@media only screen and  (max-width: 414px) {
+  .welcome__text span {
+    font-size: 1.6rem;
+}
 
+  .welcome__text h1 {
+    font-size: 2.7em;
+}
+
+  .welcome__text a {
+  font-size: 0.8rem;
+  }  
+
+}
+
+@media only screen and  (max-width: 375px) {
+  .welcome__text span {
+    font-size: 1.6rem;
+}
+
+  .welcome__text h1 {
+    font-size: 2.5em;
+}
+
+  .welcome__text a {
+  font-size: 0.75rem;
+  }  
+
+}
