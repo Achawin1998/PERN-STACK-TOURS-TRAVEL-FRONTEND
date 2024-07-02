@@ -72,8 +72,9 @@ function Testimonials() {
 
       <div className="testimonial py-4 px-3">
         <p>
-          Thank you very much. It is beautiful, as in the attached picture. In
-          the future, I will use the this services again.
+          Thank you very much for the good service. I never expected it to be
+          this good. This is my first time using this airline. See you next time
+          for sure.
         </p>
 
         <div className="d-flex align-items-center gap-4 mt-3">
@@ -140,7 +141,7 @@ function Testimonials() {
       <div className="testimonial py-4 px-3">
         <p>
           This is much more comfortable than I thought. I love it. My cat looks
-          so relaxed. Because of the service here
+          so relaxed. Because of the service here 10/10 for sure ♥.
         </p>
 
         <div className="d-flex align-items-center gap-4 mt-3">
