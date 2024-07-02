@@ -47,7 +47,7 @@ function Booking({ tour, avaRating, reviews }) {
 
     try {
       if (!user || user === undefined || user === null) {
-        return alert("Please sign in");
+        return alert("Please sign in berfore booking.");
       }
 
       if (
