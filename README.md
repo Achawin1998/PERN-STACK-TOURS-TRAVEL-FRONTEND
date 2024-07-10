@@ -5,6 +5,6 @@
 
 🍒2. มีระบบ register/login/booking/reviews และอื่น ๆ 🍒
 
-🍒3. บันทึกข้อมูลต่าง ๆ ลงบน PostgeSQL 🍒
+🍒3. บันทึกข้อมูลต่าง ๆ ลงบน PostgreSQL 🍒
 
 🍒[Go to Website](https://pern-stack-tours-travel-frontend.vercel.app/)🍒
